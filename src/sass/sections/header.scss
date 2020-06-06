@@ -1,0 +1,130 @@
+.header {
+  background-image: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9)),
+    url(../img/background-min.jpg);
+  padding-top: 22px;
+  padding-bottom: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+@media (min-resolution: 192dpi) {
+  .header {
+    background-image: linear-gradient(0deg,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)),
+      url(../img/background@2x-min.jpg);
+  }
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header__navigation {
+  margin-bottom: 150px;
+}
+
+.logotype {
+  font-size: 30px;
+  font-weight: 700;
+  color: $main-color;
+}
+
+.menu-list {
+  margin-left: auto;
+}
+
+.menu-list__item:not(:last-child) {
+  margin-right: 68px;
+}
+
+.menu-list__link {
+  color: $main-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  position: relative;
+  font-weight: 700;
+}
+
+.menu-list__link::after {
+  content: "";
+  width: 0%;
+  display: block;
+  height: 3px;
+  bottom: -10px;
+  background-color: $fourth-color;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: width 0.2s linear;
+}
+
+.menu-list__link:hover::after,
+.menu-list__link:focus::after {
+  width: 100%;
+}
+
+.menu-list__item:hover .menu-list__link,
+.menu-list__item:focus .menu-list__link {
+  color: $fourth-color;
+}
+
+.control-list {
+  padding-left: 50px;
+}
+
+.control-list__item:not(:last-child) {
+  margin-right: 42px;
+}
+
+.control-list__icon {
+  width: 18px;
+  height: 18px;
+  transition: all 0.2s linear;
+  fill: $main-color;
+}
+
+.control-list__icon:hover,
+.control-list__icon:focus {
+  fill: $fourth-color;
+  transform: scale(1.5);
+}
+
+.hero {
+  color: $main-color;
+  text-align: center;
+  max-width: 828px;
+  margin: 0 auto;
+}
+
+.hero__subtitle {
+  font-family: $third-font;
+  font-size: 72px;
+  margin-bottom: 12px;
+}
+
+.hero__title {
+  font-size: 150px;
+  margin-bottom: 102px;
+}
+
+.hero__btn {
+  border: 3px solid #ffffff;
+  width: 170px;
+  color: $main-color;
+  padding: 12px 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.2s linear;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: $fourth-color;
+}

@@ -1,0 +1,115 @@
+.team {
+  padding-top: 34px;
+  padding-bottom: 86px;
+}
+
+.team__title {
+  font-size: 30px;
+  margin-bottom: 64px;
+}
+
+.team__subtitle {
+  font-family: $third-font;
+  font-size: 24px;
+  text-transform: none;
+  display: block;
+  font-weight: 400;
+}
+
+.team__description {
+  font-family: $second-font;
+  text-align: center;
+  color: $third-color;
+  margin: 0 auto 70px;
+  max-width: 980px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.team-list {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.team-list__item-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+  transition: all 0.2s linear;
+}
+
+.team-list__item-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-list__item:hover .team-list__item-overlay,
+.team-list__item:focus .team-list__item-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-list__item:hover .team-list__item-wrapper,
+.team-list__item:focus .team-list__item-wrapper {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 rgb(149, 225, 211);
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: rgb(243, 129, 129);
+}
+
+.social-list__item:hover .social-list__icon,
+.social-list__item:focus .social-list__icon {
+  fill: $main-color;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 1px;
+}
+
+.social-list__link {
+  width: 56px;
+  height: 56px;
+  background-color: $fourth-color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+}
+
+.social-list__icon {
+  fill: rgb(243, 129, 129);
+  width: 26px;
+  height: 26px;
+  transition: all 0.2s linear;
+}
+
+.team-list__title {
+  font-size: 14px;
+  color: $second-color;
+}
+
+.team-list__subtitle {
+  font-family: $second-font;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  color: $third-color;
+}

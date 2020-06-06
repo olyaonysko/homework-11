@@ -1,0 +1,73 @@
+.services {
+  padding-top: 38px;
+  padding-bottom: 34px;
+  color: $second-color;
+}
+
+.services__subtitle {
+  font-family: $third-font;
+  font-size: 24px;
+  text-transform: none;
+  display: block;
+  font-weight: 400;
+}
+
+.services__title {
+  font-size: 30px;
+  margin-bottom: 64px;
+}
+
+.services-list {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services-list__item {
+  max-width: 338px;
+  position: relative;
+  padding-left: 54px;
+  background-repeat: no-repeat;
+}
+
+.services-list__item:not(:nth-last-of-type(-n + 3)) {
+  margin-bottom: 100px;
+}
+
+.services-list__icon_alarm {
+  background-image: url(../images/services-icon/alarm.svg);
+}
+
+.services-list__icon_graph {
+  background-image: url(../images/services-icon/graph.svg);
+}
+
+.services-list__icon_computer {
+  background-image: url(../images/services-icon/computer.svg);
+}
+
+.services-list__icon_book {
+  background-image: url(../images/services-icon/book.svg);
+}
+
+.services-list__icon_home {
+  background-image: url(../images/services-icon/home.svg);
+}
+
+.services-list__icon_frame {
+  background-image: url(../images/services-icon/frame.svg);
+}
+
+.services-list__item-title {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $second-color;
+  margin-bottom: 16px;
+}
+
+.services-list__item-subtitle {
+  font-family: $second-font;
+  font-size: 15px;
+  line-height: 24px;
+  color: $third-color;
+}
